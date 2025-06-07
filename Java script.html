@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Java script haqida</title>
+    <style>
+        /* Bu yerga CSS kodini yozamiz */
+        .sidebar {
+            float: right;
+            /* Yon panelni chapga surish */
+            width: 130px;
+            /* Yon panelning kengligi, kerak bo'lsa o'zgartirish mumkin */
+
+        }
+
+        .nav-links {
+            /* Linklarni gorizontal joylashtirish uchun */
+            display: flex;
+            /* Flexboxdan foydalanamiz */
+            flex-direction: column;
+            /* Elementlarni vertikal qatorda joylashtirish */
+            /* Agar yonma-yon bo'lishini xohlasangiz flex-direction: row; qiling, lekin siz ularni alohida qatorda xohlagandingiz */
+        }
+
+        .nav-links a {
+            margin-bottom: 5px;
+            /* Linklar orasida biroz bo'sh joy qoldirish */
+            text-decoration: none;
+            /* Link ostidagi chiziqni olib tashlash */
+            white-space: nowrap;
+            /* Matnning bir qatorda qolishini ta'minlash */
+        }
+    </style>
+</head>
+
+<body>
+
+        <strong style="font-family: 'Courier New', Courier, monospace;;">
+            <div class="sidebar">
+                <div class="nav-links" style="font-size: 25px;">
+                    <a href="php.html">💻 PHP➡</a>
+                </div>
+            </div>
+            <a href="index.html" style="text-decoration: none; font-size: 20px;" >⬅Dasturlash tillari 🏠</a>
+        </strong>
+
+    <ul>
+        <h1 style="color: grey; font-family: 'Courier New', Courier, monospace;"><strong>Java script haqida
+                malumot📝</strong></h1>
+    </ul>
+
+    <ul>
+        <strong style="color: grey; font-family: 'Courier New', Courier, monospace;"> JavaScript nima? <br> <br>
+
+            Bu savolga har xil javob berish mumkin. Bu dasturlash tili, to'g'rirog'i veb dasturlash tili, undan ham
+            to'g'rirog'i klient(brauzer) tomonda ishlaydigan dasturlash tili, ya'ni bu veb dasturlash tili ishlashi
+            uchun hech qanday server(Apache, ngnix) kerak emas, oddiy brauzerda(Javascript'da yozilgan kodlar)
+            ishlayveradi. <br> <br>
+
+            Bu til nima uchun kerak? <br> <br>
+
+            Bu dasturlash tili orqali serverga so'rov jo'natmasdan, so'rovlarni(javascript kodlarini), ya'ni yozilgan
+            kodlar natijasini, brauzerni ishga tushirgan holda olishingiz mumkin. Asosan interaktiv(dinamik) saytlar
+            tuzish uchun kerak. <br> <br>
+        </strong> <br>
+    </ul>
+
+    <img width="100%" height="450px" src="https://wpengine.com/wp-content/uploads/2021/07/jsheader.png"
+        alt="image error">
+
+    <ul>
+        <strong>
+            <p style="color: grey; font-family: 'Courier New', Courier, monospace;"> <br>Har xil turdagi veb dasturlash
+                tillari mavjud, misol uchun, PHP, ASP, JAVA. Bu dasturlash tillari serverga murojaat qilgan holda
+                ishlaydi. Misol uchun, siz arifmetik qo'shish amalini bajarmoqdasiz, yig'indini olish uchun, siz yozgan
+                kod, veb serverga jo'natiladi, server bu kodni qayta ishlaydi va natijani sizga jo'natadi. Shu tariqa
+                siz natijani olasiz, brauzer ham serverdan javob(natija) kelguncha aylanib yotadi. Bundan ko'rinib
+                turibdiki, saytning(veb sahifaning) ishlash tezligi server sozlamalariga, servergacha bo'lgan masofaga,
+                aloqa kabellariga va boshqa narsalarga bog'liq bo'lib qoladi. JavaScript'da yozilgan kodlar esa, hech
+                qanday serverga murojaatni amalga oshirmaydi, shu sababli bu dasturlash tili kodlari brauzerni qayta
+                yuklamasdan ishlayveradi.</p>
+        </strong> <br>
+    </ul>
+
+    <iframe width="100%" height="627px  "
+        src="https://www.youtube.com/embed/fHl7UyRjOf0?list=PLDyJYA6aTY1kJIwbYHzGOuvSMNTfqksmk"
+        title="Уроки JavaScript для начинающих / #1 – Введение в язык JS. Что к чему?" frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+    <strong style="color: black; font-family: 'Courier New', Courier, monospace;">
+        <footer style="text-align: center; padding: 20px; font-size: 14px; color: #777;">
+            © <span id="year"></span><a href="https://t.me/fayzullohisafood" style="text-decoration: none;"> Fayzulloh Habibullayevich.</a> Barcha
+            huquqlar himoyalangan.
+        </footer>
+
+        <script>
+            document.getElementById('year').textContent = new Date().getFullYear();
+        </script>
+    </strong>
+
+</body>
+
+</html>
